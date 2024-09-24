@@ -88,14 +88,108 @@ nav.custom_navigation img {
 .custom-block-container {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
+
+
+
+.custom-block1 {
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #c8d3c4;
+    border-radius: 50px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    box-shadow: 4px 4px 20px black;
+}
+
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container p {
+    color: black;
+    font-size: x-large;
+    text-align: center;
+}
+.text-container h2 {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 6px black;
+    font-weight:bold;
+}
+
+.button1 {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button1 span {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button1 span:after {
+    content: '\2192';
+    position: relative;
+    opacity: 0;
+    margin-left: 10px;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-weight:bold;
+}
+
+.button1:hover span {
+    padding-right: 25px;
+}
+
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 .custom-block {
     display: block;
     max-width: 700px;
     padding: 20px;
-
+    box-shadow: 4px 4px 20px black;
     background-color: #c8d3c4;
     border-radius: 50px;
     overflow-wrap: break-word;
@@ -114,6 +208,12 @@ nav.custom_navigation img {
     font-size: 40px;
     text-align: center;
 }
+.custom-block h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
 
 .custom-form {
     color: black;
@@ -127,6 +227,15 @@ nav.custom_navigation img {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+}
+.custom-form input[type="checkbox"] {
+    margin-right: 10px;
+    width: 25px;  
+    height: 25px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center; 
 }
 
 .custom-block-footer {
@@ -165,6 +274,7 @@ form {
 form label {
     display: block;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 form input,
@@ -245,3 +355,12 @@ h1 {
     align-items: center;
     gap: 10px;
 }
+
+
+
+
+
+
+
+
+
