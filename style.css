@@ -641,15 +641,15 @@ iframe {
 
 
 #container-account-table {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+    
 }
 
 #container-account-table table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 20px;
-    position: center;
 }
 
 #container-account-table table,
@@ -666,9 +666,28 @@ iframe {
     text-align: center;
     font-size: x-large;
     width: 50%;
+    position: relative;
 }
 
 #container-account-table th {
     background-color: #D9D9D9;
     font-size: xx-large;
+    text-align: center;
+}
+
+#container-account-table1 table {
+    border: none;
+}
+
+#container-account-table1 th,
+#container-account-table1 td {
+    border: none;
+    width: 200px;
+}
+.small-label {
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+    text-align: left;
+    display: block;
+    margin-bottom: 4px;
 }
