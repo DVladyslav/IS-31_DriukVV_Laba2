@@ -53,6 +53,12 @@ nav.custom_navigation li a {
     font-size: large;
 }
 
+nav.custom_navigation li a.active {
+    background-color: rgba(151, 189, 150, 0.467);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
 nav.custom_navigation li a:hover {
     font-size: x-large;
     background-color: rgba(151, 189, 150, 0.467);
@@ -91,7 +97,12 @@ nav.custom_navigation img {
     gap: 40px;
 }
 
-
+.custom-block iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 10px;
+}
 
 
 .custom-block1 {
@@ -131,16 +142,17 @@ nav.custom_navigation img {
     font-size: x-large;
     text-align: center;
 }
+
 .text-container h2 {
     color: black;
     text-align: center;
     text-shadow: 2px 2px 6px black;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .button1 {
     display: inline-flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     border-radius: 4px;
     background-color: transparent;
@@ -173,7 +185,7 @@ nav.custom_navigation img {
     color: black;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .button1:hover span {
@@ -208,6 +220,7 @@ nav.custom_navigation img {
     font-size: 40px;
     text-align: center;
 }
+
 .custom-block h3 {
     color: black;
     font-weight: bold;
@@ -228,14 +241,16 @@ nav.custom_navigation img {
     padding: 10px 20px;
     border-radius: 5px;
 }
+
 .custom-form input[type="checkbox"] {
     margin-right: 10px;
-    width: 25px;  
+    width: 25px;
     height: 25px;
 }
+
 .checkbox-container {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .custom-block-footer {
@@ -344,6 +359,7 @@ h1 {
 }
 
 
+
 .icon img {
     height: 50px;
     width: 50px;
@@ -356,11 +372,303 @@ h1 {
     gap: 10px;
 }
 
+.text-image {
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-image h1 {
+    font-size: 75px;
+    font-weight: bold;
+    background-image: url('https://img.freepik.com/premium-vector/tiger-zebra-fur-repeating-texture-seamless-vector-pattern_265182-217.jpg');
+    background-size: contain;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow-x: hidden;
+}
+
+.iframe-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.box1 {
+    background-color: #c8d3c4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 10px black;
+
+}
+
+.box1 h3 {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #f04d3d;
+    font-weight: bold;
+}
+
+.box1 h3 i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.box1 p {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.icon-heart::before {
+    content: '❤️';
+}
+
+.icon-trophy::before {
+    content: '🏆';
+}
+
+.icon-happy::before {
+    content: '😊';
+}
+
+.icon-clock::before {
+    content: '⏰';
+}
+
+.icon-energy::before {
+    content: '⚡';
+}
+
+.icon-shield::before {
+    content: '🛡️';
+}
+
+.custom-image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.custom-block-coach {
+    display: block;
+    max-width: 700px;
+    padding: 20px;
+    box-shadow: 4px 4px 20px black;
+    background-color: #c8d3c4;
+    border-radius: 50px;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+}
+
+.custom-block-coach li {
+    color: #000000;
+    font-weight: bold;
+    font-size: x-large;
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+.custom-block-coach li::before {
+    content: "✦";
+    left: 0;
+    color: #000000;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.custom-block-coach h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.custom-block-coach h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.back-button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 25px;
+    transition: background-color 0.3s;
+
+}
+
+.scroll-to-top-button:hover {
+    background-color: #555;
+}
 
 
 
+.login-container {
+    background-color: #c8d3c4;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    max-width: 500px;
+    width: 400px;
+
+}
+
+.login-form input:focus {
+    border-color: #87B188;
+    outline: none;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 150px;
+    text-decoration: none;
+}
+
+.login-form button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
 
 
+#container-account-table {
+    width: 80%;
+    margin: 0 auto;
+}
 
+#container-account-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+    position: center;
+}
 
+#container-account-table table,
+#container-account-table th,
+#container-account-table td {
+    border: 4px solid #ffffff;
+}
 
+#container-account-table th,
+#container-account-table td {
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    width: 50%;
+}
+
+#container-account-table th {
+    background-color: #D9D9D9;
+    font-size: xx-large;
+}

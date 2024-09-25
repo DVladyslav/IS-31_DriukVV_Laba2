@@ -22,7 +22,7 @@
                 <li><img src="images/icon.png" alt="Logo" style="width: auto; height: 70px;"></li>
                 <li><a href="/index.html">ГОЛОВНА</a></li>
                 <li><a href="/service.html">ПОСЛУГИ</a></li>
-                <li><a href="/offers.html">АКЦІЇ</a></li>
+                <li><a href="/offers.html" class="active">АКЦІЇ</a></li>
                 <li><a href="/schedule.html">РОЗКЛАД</a></li>
                 <li><a href="/about.html">ПРО НАС</a></li>
                 <li><a href="/cabinet.html">МІЙ SPORTIFY</a></li>
@@ -38,11 +38,13 @@
         </div>
 
         <div class="content">
-            <div class="custom-block-container">
-                <div class="custom-block">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5639/5639713.png">
+            <div class="custom-block-container" style="gap: 0;">
+                <div class="custom-block" style="width:900px">
+                    <div class="iframe-container" style="width:900px;overflow:  hidden;">
+                        <iframe src="./wheel/fortune-wheel/fortune-wheel/src/index.html"></iframe>
+                    </div>
                 </div>
-                <div class="custom-block" style="height:500px; width: 500px;">
+                <div class="custom-block" style="height:500px; width: 500px;  margin: 0;">
                     <h3>Заповнюй свої дані та отримай свій виграш у фітнес-фортуні</h3>
                     <div class="custom-form">
                         <form action="#" method="post">
@@ -119,6 +121,7 @@
             </div>
 
         </div>
+        <button id="scrollToTopBtn" class="scroll-to-top-button" style="display: none;">👆</button>
 
     </main>
     <footer>
@@ -175,5 +178,5 @@
         <p style="font-size: small;">&copy; 2024 Sportify. Всі права захищені.</p>
     </footer>
 </body>
-
+<script src="/scroll-to-top.js"></script>
 </html>
