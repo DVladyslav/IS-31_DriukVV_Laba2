@@ -446,30 +446,6 @@ iframe {
     font-weight: bold;
 }
 
-.icon-heart::before {
-    content: '❤️';
-}
-
-.icon-trophy::before {
-    content: '🏆';
-}
-
-.icon-happy::before {
-    content: '😊';
-}
-
-.icon-clock::before {
-    content: '⏰';
-}
-
-.icon-energy::before {
-    content: '⚡';
-}
-
-.icon-shield::before {
-    content: '🛡️';
-}
-
 .custom-image-container img {
     width: 100%;
     border-radius: 10px;
