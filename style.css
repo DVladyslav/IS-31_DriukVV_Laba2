@@ -22,6 +22,7 @@ header {
     overflow-x: hidden;
 }
 
+/*  НАВІГАЦІЙНА ПАНЕЛЬ  */
 nav.custom_navigation {
     position: absolute;
     top: 0;
@@ -68,6 +69,7 @@ nav.custom_navigation img {
     text-align: left;
 }
 
+/* ОСНОВНИЙ КОНТЕНТ */
 .content {
     padding: 20px;
     position: relative;
@@ -77,6 +79,7 @@ nav.custom_navigation img {
     margin: 20px auto;
 }
 
+/* СЛОГАНИ (ТЕКСТ НА ЧОРНОМУ ФОНІ) */
 .slogan {
     width: 100%;
     background-color: #000000;
@@ -91,6 +94,7 @@ nav.custom_navigation img {
     font-size: 8ch;
 }
 
+/* РОЗДІЛЬНИЙ КОНТЕЙНЕР ДЛЯ РОЗМІЩЕННЯ БЛОКІВ З ІНФОРМАЦІЄЮ */
 .custom-block-container {
     display: flex;
     justify-content: space-between;
@@ -104,7 +108,7 @@ nav.custom_navigation img {
     border-radius: 10px;
 }
 
-
+/* СУЦІЛЬНИЙ БЛОК ДЛЯ РОЗМІЩЕННЯ ФОТО ТА ІНФОРМАЦІЇ */
 .custom-block1 {
     display: flex;
     max-width: 100%;
@@ -116,7 +120,7 @@ nav.custom_navigation img {
     box-shadow: 4px 4px 20px black;
 }
 
-
+/* КОНТЕЙНЕР ДЛЯ ЗОБРАЖЕННЯ У custom-block1*/
 .image-container {
     flex: 1;
     max-width: 50%;
@@ -127,6 +131,7 @@ nav.custom_navigation img {
     border-radius: 10px;
 }
 
+/* КОНТЕЙНЕР ДЛЯ ТЕКСТУ У custom-block1*/
 .text-container {
     flex: 1;
     margin-left: 20px;
@@ -150,6 +155,7 @@ nav.custom_navigation img {
     font-weight: bold;
 }
 
+/* КНОПКА НА СТОРІНЦІ ПОСЛУГИ, ЩО ПЕРЕМІЩУЄ ДО СТОРІНОК З ТРЕНАРАМИ*/
 .button1 {
     display: inline-flex;
     align-items: center;
@@ -209,6 +215,7 @@ nav.custom_navigation img {
     white-space: normal;
 }
 
+/* ОСНОВНИЙ БЛОК ДЛЯ ІНФОРМАЦІЇ */
 .custom-block li {
     color: #403C3C;
     font-weight: bold;
@@ -229,6 +236,7 @@ nav.custom_navigation img {
     text-align: center;
 }
 
+/* БЛОК ДЛЯ СТИЛІЗОВАНОЇ ФОРМИ */
 .custom-form {
     color: black;
     font-weight: bold;
@@ -249,40 +257,6 @@ nav.custom_navigation img {
     height: 25px;
 }
 
-.checkbox-container {
-    display: flex;
-    align-items: center;
-}
-
-.custom-block-footer {
-    display: inline-block;
-    max-width: 700px;
-    padding: 10px;
-
-    background-color: #00000000;
-    border-radius: 10px;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-.block-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 8px;
-}
-
-.carousel-inner>.item>img {
-    width: 100%;
-    max-height: auto;
-    margin: 0 auto;
-}
-
 form {
     margin: 20px 0;
 }
@@ -301,6 +275,28 @@ form textarea {
     margin-bottom: 10px;
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+/* БЛОКИ ДЛЯ "ПІДВАЛУ" САЙТУ */
+.custom-block-footer {
+    display: inline-block;
+    max-width: 700px;
+    padding: 10px;
+
+    background-color: #00000000;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.block-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -311,6 +307,20 @@ footer {
 footer p {
     font-size: medium;
     color: white;
+}
+
+/* КОНТЕЙНЕР ДЛЯ СЛАЙДЕРУ */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 8px;
+}
+
+.carousel-inner>.item>img {
+    width: 100%;
+    max-height: auto;
+    margin: 0 auto;
 }
 
 p {
@@ -325,7 +335,7 @@ h1 {
     font-weight: bold;
 }
 
-
+/* СЕЛЕКТОРИ ІДЕНТИФІКАТОРА ДЛЯ СТИЛІЗАЦІЇ ТАБЛИЦІ */
 #container-main-table {
     width: 80%;
     margin: 0 auto;
@@ -360,13 +370,13 @@ h1 {
 }
 
 
-
+/* СЕЛЕКТОР ТЕГУ ДЛЯ ЗОБРАЖЕННЯ МАРКИ */
 .icon img {
     height: 50px;
     width: 50px;
     padding: 2px;
 }
-
+/* СЕЛЕКТОР ДЛЯ КОНТАКТНОЇ ІНФОРМАЦІЇ */
 .contact-info {
     display: flex;
     align-items: center;
@@ -388,7 +398,7 @@ h1 {
     color: transparent;
     text-align: center;
 }
-
+/* КОНТЕЙНЕР ДЛЯ ФРЕЙМУ */
 .iframe-container {
     width: 100%;
     height: 500px;
@@ -445,7 +455,7 @@ iframe {
     color: #333;
     font-weight: bold;
 }
-
+/* КОНТЕЙНЕРИ ТА БЛОКИ ДЛЯ ВІДОБРАЖЕННЯ ФОТО ТА ДАНИХ ТРЕНЕРІВ */
 .custom-image-container img {
     width: 100%;
     border-radius: 10px;
@@ -494,7 +504,7 @@ iframe {
     text-align: center;
 }
 
-
+/* СТИЛІЗАЦІЯ КНОПКИ ПОВЕРНЕННЯ НАЗАД */
 .back-button {
     display: inline-block;
     padding: 10px 20px;
@@ -521,7 +531,7 @@ iframe {
     transform: translateY(2px);
 
 }
-
+/* СТИЛІЗАЦІЯ КНОПКИ ПОВЕРНЕННЯ ДОГОРИ */
 .scroll-to-top-button {
     position: fixed;
     bottom: 20px;
@@ -542,9 +552,7 @@ iframe {
 .scroll-to-top-button:hover {
     background-color: #555;
 }
-
-
-
+/* СТИЛІЗАЦІЯ ФОРМИ ДЛЯ ВХОДУ У ВЛАСНИЙ КАБІНЕТ */
 .login-container {
     background-color: #c8d3c4;
     border-radius: 10px;
@@ -616,11 +624,11 @@ iframe {
     color: rgb(0, 0, 0);
 }
 
-
+/* СТИЛІЗАЦІЯ ТАБЛИЦІ З ДАНИМИ КЛІЄНТА */
 #container-account-table {
     width: 50%;
     margin: 0 auto;
-    
+
 }
 
 #container-account-table table {
@@ -661,6 +669,7 @@ iframe {
     border: none;
     width: 200px;
 }
+
 .small-label {
     font-size: 16px;
     color: rgb(70, 70, 70);
