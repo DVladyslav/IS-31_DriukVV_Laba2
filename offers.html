@@ -27,6 +27,7 @@
                 <li><a href="about.html">ПРО НАС</a></li>
                 <li><a href="cabinet.html">МІЙ SPORTIFY</a></li>
             </ul>
+            <button class="toggle-button">Menu</button> 
         </nav>
     </header>
     <main>
@@ -38,7 +39,7 @@
         </div>
 
         <div class="content">
-            <div class="custom-block-container" style="gap: 0;">
+            <div class="custom-block-container">
                 <div class="custom-block">
                     <img src="./images/image23.png" alt="wheel_fortune" style="width:100%;"> 
                 </div>
@@ -57,7 +58,6 @@
                                     «Відправити», ви надаєте згоду на обробку та використання ваших персональних
                                     даних.</label>
                             </div>
-                            <br>
                             <button type="submit">Відправити</button>
 
                         </form>
@@ -80,16 +80,16 @@
 
         </div>
         <div class="slogan">
-            <h1 style="font-size:50px;">Святкуйте свій день народження з нами! 🎉</h1>
+            <h1>Святкуйте свій день народження з нами! 🎉</h1>
         </div>
 
         <div class="content">
             <div class="custom-block-container">
                 <div class="custom-block">
-                    <p style="color:black; font-size: x-large; text-align:center;margin-top:50px;">У Ваш день народження
+                    <p style="color:black; text-align:center;margin-top:7%;">У Ваш день народження
                         Ви отримуєте безкоштовне заняття з будь-яким тренером або груповою
                         програмою! Обирайте те, що вам подобається, та насолоджуйтеся своїм святом активно!</p><br><br>
-                    <img src="./images/happy_birthday_gym_service.png" alt="happy_birthday_gym_service">
+                    <img src="./images/happy_birthday_gym_service.png" alt="happy_birthday_gym_service" style="width:100%;">
                 </div>
                 <div class="custom-block" style="background-color: transparent; box-shadow: none;">
                     <img src="./images/happy_birthday_gym_people.png" alt="happy_birthday_gym_service"
@@ -99,7 +99,7 @@
 
         </div>
         <div class="slogan">
-            <h1 style="font-size:50px;">👯‍♂️ Приведи друга та отримай знижку! 👯‍♀️</h1>
+            <h1>👯‍♂️ Приведи друга та отримай знижку! 👯‍♀️</h1>
         </div>
 
         <div class="content">
@@ -109,8 +109,8 @@
                         style="width:100%;     box-shadow: 4px 4px 20px black; border-radius: 46px;">
 
                 </div>
-                <div class="custom-block" style="display: flex; justify-content: center; align-items: center;">
-                    <p style="color:black; font-size: xx-large; text-align:center;margin-top:50px;">
+                <div class="custom-block">
+                    <p style="color:black; text-align:center;margin-top:7%;">
                         Запросіть друга на безкоштовне заняття, і якщо він підпише абонемент, ви обидва отримаєте 10%
                         знижки на наступний місяць! Спільні тренування – це чудовий спосіб підтримати один одного на
                         шляху до здоров'я!</p><br><br>
@@ -176,6 +176,14 @@
         <p style="font-size: small;">&copy; 2024 Sportify. Всі права захищені.</p>
     </footer>
     <script src="./scroll-to-top.js"></script>
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const navMenu = document.querySelector('.custom_navigation');
+    
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

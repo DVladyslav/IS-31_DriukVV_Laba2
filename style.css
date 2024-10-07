@@ -173,10 +173,13 @@ nav.custom_navigation img {
 
 /* РОЗДІЛЬНИЙ КОНТЕЙНЕР ДЛЯ РОЗМІЩЕННЯ БЛОКІВ З ІНФОРМАЦІЄЮ */
 .custom-block-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .custom-block iframe {
@@ -203,7 +206,7 @@ nav.custom_navigation img {
 
 /* КОНТЕЙНЕР ДЛЯ ЗОБРАЖЕННЯ У custom-block1*/
 .image-container {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
     max-width: 100%;
 }
 
@@ -289,7 +292,7 @@ nav.custom_navigation img {
 
 .custom-block {
     display: block;
-    max-width: 700px;
+    max-width: 550px;
     padding: 20px;
     box-shadow: 4px 4px 20px black;
     background-color: #c8d3c4;
@@ -476,7 +479,7 @@ h1 {
 }
 
 .text-image h1 {
-    font-size: 75px;
+    font-size: clamp(2rem, 10vw, 6rem);
     font-weight: bold;
     background-image: url('./images/tiger-zebra-fur-repeating-texture-seamless-vector-pattern_265182-217.png');
     background-size: contain;
@@ -507,16 +510,20 @@ iframe {
 
 
 .container1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     gap: 50px;
+    justify-content: сenter;
+    align-items: сenter;
 }
 
 .box1 {
     background-color: #c8d3c4;
+    width: 100%;
+    
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -551,8 +558,8 @@ iframe {
 
 .custom-block-coach {
     display: flex;
-    flex-direction: column; 
-    flex: 1 1 300px; 
+    flex-direction: column;
+    flex: 1 1 300px;
     max-width: 700px;
     padding: 20px;
     box-shadow: 4px 4px 20px black;
@@ -566,7 +573,7 @@ iframe {
 .custom-block-coach h2+ul li {
     color: #000000;
     font-weight: bold;
-    font-size: clamp(1rem, 3vw, 2.5rem); 
+    font-size: clamp(1rem, 3vw, 2.5rem);
     list-style-type: none;
     position: relative;
     padding-left: 10px;
@@ -576,14 +583,14 @@ iframe {
     content: "✦";
     left: 0;
     color: #000000;
-    font-size: clamp(2rem, 4vw, 2.2rem); 
+    font-size: clamp(2rem, 4vw, 2.2rem);
     padding-right: 10px;
 }
 
 .custom-block-coach h2 {
     color: black;
     font-weight: bold;
-    font-size: clamp(1rem, 4vw, 2.5rem); 
+    font-size: clamp(1rem, 4vw, 2.5rem);
     text-align: center;
 }
 

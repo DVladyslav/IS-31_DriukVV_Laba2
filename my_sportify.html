@@ -27,6 +27,7 @@
                 <li><a href="about.html">ПРО НАС</a></li>
                 <li><a href="cabinet.html" class="active">МІЙ SPORTIFY</a></li>
             </ul>
+            <button class="toggle-button">Menu</button> 
         </nav>
     </header>
     <main>
@@ -81,7 +82,7 @@
         </div>
 
         <div class="content">
-            <div class="custom-block1" style="background-color: transparent; box-shadow: none; align-items: center; position: relative;">
+            <div class="custom-block1" style="background-color: transparent; box-shadow: none; ">
                 <div id="container-account-table">
                     <table>
                         <thead>
@@ -212,6 +213,14 @@
         <p style="font-size: small;">&copy; 2024 Sportify. Всі права захищені.</p>
     </footer>
     <script src="./scroll-to-top.js"></script>
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const navMenu = document.querySelector('.custom_navigation');
+    
+        toggleButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 
