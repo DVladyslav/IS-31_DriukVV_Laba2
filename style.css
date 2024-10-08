@@ -959,7 +959,8 @@ table.schedule td {
 
 .blink {
     border-color: white;
-    animation: blink 0.5s infinite alternate;
+    border-width: 15px;
+    animation: blink 10s infinite alternate;
 }
 
 @keyframes blink {

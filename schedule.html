@@ -51,9 +51,9 @@
                 <tbody>
                     <tr>
                         <td>08:00 - 09:00</td>
-                        <td><a href="#block1" class="link">Aqua burn</a></td>
+                        <td><span class="link" data-target="#block1">Aqua burn</span></td>
                         <td>TRX Power</td>
-                        <td>Aqua Burn</td>
+                        <td><span class="link" data-target="#block1">Aqua burn</span></td>
                         <td>TRX Power</td>
                         <td>Power Pilates</td>
                         <td> = = = </td>
@@ -64,7 +64,7 @@
                         <td>Spin Boost</td>
                         <td>Strength & Sculpt</td>
                         <td>Functional Fusion</td>
-                        <td>Aqua Burn</td>
+                        <td><span class="link" data-target="#block1">Aqua burn</span></td>
                         <td>TRX Power</td>
                     </tr>
                     <tr>
@@ -250,7 +250,14 @@
                 const targetId = this.getAttribute('data-target');
                 const targetElement = document.querySelector(targetId);
 
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+                const blockPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                const offset = (window.innerHeight / 2) - (targetElement.offsetHeight / 2);
+
+                window.scrollTo({
+                    top: blockPosition - offset,
+                    behavior: 'smooth'
+                });
+
                 targetElement.classList.add('blink');
 
                 setTimeout(() => {
