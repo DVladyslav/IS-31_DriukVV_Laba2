@@ -151,6 +151,66 @@ nav.custom_navigation img {
 
 }
 
+@media (min-width: 600px) and (max-width: 1560px) {
+    .toggle-button {
+        display: none;
+    }
+
+    nav.custom_navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #container-main-table table,
+    #container-main-table th,
+    #container-main-table td {
+        border: 1px solid #ccc;
+    }
+
+    #container-main-table th {
+        background-color: #4E5D4F;
+    }
+
+    .block-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .custom-block1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media not screen and (max-width: 1560px) {
+    nav.custom_navigation ul {
+        justify-content: center;
+    }
+
+    #container-main-table table,
+    #container-main-table th,
+    #container-main-table td {
+        border: 1px solid #ddd;
+    }
+
+    #container-main-table th {
+        background-color: #35423F;
+    }
+    
+
+    .block-footer {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .custom-block1 {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /* ОСНОВНИЙ КОНТЕНТ */
 .content {
     padding: 20px;
@@ -258,7 +318,7 @@ nav.custom_navigation img {
     width: 100%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 2px;
     text-decoration: none !important;
 }
 
@@ -476,7 +536,7 @@ h1 {
 }
 
 .text-image {
-    max-width: 50%;
+    max-width: 100%;
     text-align: center;
     margin: 0 auto;
 }
