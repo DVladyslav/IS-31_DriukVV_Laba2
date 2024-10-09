@@ -136,6 +136,10 @@ nav.custom_navigation img {
 
     }
 
+    .custom-block1 {
+        text-align: center;
+    }
+
     .custom-block-footer {
         text-align: center;
         padding-left: 0;
@@ -194,6 +198,7 @@ nav.custom_navigation img {
     display: flex;
     max-width: 100%;
     padding: 20px;
+    margin: 5%;
     background-color: #c8d3c4;
     flex-wrap: wrap;
     border-radius: 50px;
@@ -216,8 +221,8 @@ nav.custom_navigation img {
 /* КОНТЕЙНЕР ДЛЯ ТЕКСТУ У custom-block1*/
 .text-container {
     flex: 1 1 45%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     max-width: 100%;
     flex-direction: column;
@@ -425,7 +430,7 @@ h1 {
 /* СЕЛЕКТОРИ ІДЕНТИФІКАТОРА ДЛЯ СТИЛІЗАЦІЇ ТАБЛИЦІ */
 #container-main-table {
     width: 80%;
-    margin: 0 auto;
+    margin: 7% auto;
 }
 
 #container-main-table table {
@@ -739,31 +744,31 @@ input[type="tel"] {
 }
 
 /* СТИЛІЗАЦІЯ ТАБЛИЦІ З ДАНИМИ КЛІЄНТА */
-#container-account-table {
+.container-account-table {
     width: 500px;
     margin: 0 auto;
 
 }
 
-#container-account-table table {
+.container-account-table table {
     width: 80%;
     border-collapse: collapse;
     margin: 20px;
 }
 
-#container-account-table table,
-#container-account-table th,
-#container-account-table td {
+.container-account-table table,
+.container-account-table th,
+.container-account-table td {
     border: 4px solid #ffffff;
 }
 
-#container-account-table tr:hover {
+.container-account-table tr:hover {
     background-color: #A9D6A9;
 }
 
-#container-account-table th,
-#container-account-table td {
-    padding: 8px;
+.container-account-table th,
+.container-account-table td {
+    padding: 5px;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -772,18 +777,18 @@ input[type="tel"] {
     position: relative;
 }
 
-#container-account-table th {
+.container-account-table th {
     background-color: #D9D9D9;
     font-size: xx-large;
     text-align: center;
 }
 
-#container-account-table1 table {
+.container-account-table1 table {
     border: none;
 }
 
-#container-account-table1 th,
-#container-account-table1 td {
+.container-account-table1 th,
+.container-account-table1 td {
     border: none;
     width: 200px;
 }
@@ -815,18 +820,21 @@ table.schedule td {
 
 table.schedule th {
     background-color: #D9D9D9;
-    color:black;
-    text-shadow:2px 2px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     font-size: clamp(2rem, 2vw, 4rem);
 }
+
 table.schedule td {
     background-color: #5E5959;
-    color:white;
+    color: white;
     text-shadow: 2px 2px #000000;
 }
+
 .table-container {
     overflow-x: auto;
 }
+
 @media screen and (max-width: 600px) {
 
     table.schedule thead {
@@ -854,7 +862,7 @@ table.schedule td {
     table.schedule td:first-child {
         font-weight: bold;
         background-color: #f2f2f2;
-        color:black;
+        color: black;
         text-shadow: none;
     }
 
@@ -930,7 +938,7 @@ table.schedule td {
     font-size: clamp(2rem, 2vw, 3.5rem);
     margin-bottom: 10px;
     color: black;
-    text-shadow:1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     font-weight: bold;
 }
 
@@ -967,6 +975,7 @@ table.schedule td {
     0% {
         border-color: white;
     }
+
     100% {
         border-color: transparent;
     }

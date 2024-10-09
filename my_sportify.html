@@ -27,7 +27,7 @@
                 <li><a href="about.html">ПРО НАС</a></li>
                 <li><a href="cabinet.html" class="active">МІЙ SPORTIFY</a></li>
             </ul>
-            <button class="toggle-button">Menu</button> 
+            <button class="toggle-button">Menu</button>
         </nav>
     </header>
     <main>
@@ -38,7 +38,7 @@
 
         <div class="content">
             <div class="custom-block1" style="background-color: transparent; box-shadow: none; ">
-                <div id="container-account-table">
+                <div class="container-account-table">
                     <table>
                         <thead>
                             <tr>
@@ -83,7 +83,7 @@
 
         <div class="content">
             <div class="custom-block1" style="background-color: transparent; box-shadow: none; ">
-                <div id="container-account-table">
+                <div class="container-account-table">
                     <table>
                         <thead>
                             <tr>
@@ -119,12 +119,12 @@
                     </table>
                 </div>
 
-                <div id="container-account-table">
-                    <div id="container-account-table1">
-                    <table style="border: none;">
-                        <tbody style="border: none;">
-                            <tr >
-                                <td >
+
+                <div class="container-account-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
                                     <span class="small-label">М’язи</span>
                                     50 кг
                                     <br><br>
@@ -134,11 +134,12 @@
                                     <span class="small-label">Вік тіла</span>
                                     50 років
                                 </td>
-            
+
                                 <td class="stickman">
-                                    <img src="./clients/stickman.png" alt="stickman" style="position:relative; width:100%">
+                                    <img src="./clients/stickman.png" alt="stickman"
+                                        style="position:relative; width:100%">
                                 </td>
-            
+
                                 <td>
                                     <span class="small-label">Жир</span>
                                     40%
@@ -153,7 +154,7 @@
                         </tbody>
                     </table>
                 </div>
-                </div>
+
             </div><br>
         </div><br><br>
         <button id="scrollToTopBtn" class="scroll-to-top-button" style="display: none;">👆</button>
@@ -216,7 +217,7 @@
     <script>
         const toggleButton = document.querySelector('.toggle-button');
         const navMenu = document.querySelector('.custom_navigation');
-    
+
         toggleButton.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });
