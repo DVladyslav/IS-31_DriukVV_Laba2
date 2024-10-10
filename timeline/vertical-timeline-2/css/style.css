@@ -9,15 +9,14 @@ body {
 
 body {
   font-family: 'Jura', sans-serif;
-  ;
-  font-size: 17px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   font-weight: 400;
   background: #C0DFC7;
 
 }
 
-h1 {
-  font-size: 200%;
+h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
@@ -144,6 +143,7 @@ a:focus {
 .timeline-item:nth-child(2) .timeline-img-header {
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1458530970867-aaa3700e966d") center center no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .timeline-item:nth-child(5) .timeline-img-header {

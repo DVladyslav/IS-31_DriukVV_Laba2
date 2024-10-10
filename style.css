@@ -266,7 +266,6 @@ nav.custom_navigation img {
     white-space: normal;
     box-shadow: 4px 4px 20px black;
 }
-
 /* КОНТЕЙНЕР ДЛЯ ЗОБРАЖЕННЯ У custom-block1*/
 .image-container {
     flex: 1 1 45%;
@@ -315,7 +314,7 @@ nav.custom_navigation img {
     text-align: center;
     font-size: 28px;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 2px;
@@ -327,7 +326,7 @@ nav.custom_navigation img {
     display: inline-flex;
     align-items: center;
     position: relative;
-    transition: 0.5s;
+    transition: padding-right 0.4s ease; 
 }
 
 .button1 span:after {
