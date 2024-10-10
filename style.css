@@ -83,6 +83,7 @@ nav.custom_navigation img {
     cursor: pointer;
 }
 
+/* МОБІЛЬНА ВЕРСІЯ САЙТУ */
 @media (max-width: 600px) {
     .toggle-button {
         display: block;
@@ -150,7 +151,7 @@ nav.custom_navigation img {
     }
 
 }
-
+/* ПЛАНШЕТНА/НОУТБУЧНА ВЕРСІЯ САЙТУ */
 @media (min-width: 600px) and (max-width: 1560px) {
     .toggle-button {
         display: none;
@@ -183,7 +184,7 @@ nav.custom_navigation img {
     }
 }
 
-
+/* ДЕСКТОПНА ВЕРСІЯ САЙТУ */
 @media not screen and (max-width: 1560px) {
     nav.custom_navigation ul {
         justify-content: center;
@@ -196,7 +197,8 @@ nav.custom_navigation img {
     }
 
     #container-main-table th {
-        background-color: #35423F;
+        text-shadow: 2px 2px rgb(9, 27, 8);
+        font-weight: bold;
     }
     
 
